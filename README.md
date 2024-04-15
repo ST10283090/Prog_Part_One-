@@ -19,6 +19,8 @@ returnScale() was added i fthe user wnats to return to the original recipe. Allo
 
 error handling was added to ingredients so that value <= 0 couldbnt be entered.
 
+return scale() was edited to display the new recipe() to improve user experience/
+
 clearRecipe() was added.
 
 format of display() was changed to be more formal and presentable.
