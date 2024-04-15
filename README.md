@@ -20,6 +20,8 @@ returnScale() was added i fthe user wnats to return to the original recipe. Allo
 error handling was added to ingredients so that value <= 0 couldbnt be entered.
 
 clearRecipe() was added.
+
+format of display() was changed to be more formal and presentable.
 clearRecipe was editied. Now allows user to reset array to no values entered. User wil then be allwed to enter another recipe.
 
 exit prgram() was added to exit program if need be.
