@@ -12,3 +12,6 @@ displayRecipe() was added.
 Allows user to view a stored recipe, will not work if no recipe has been saved.
 
 ScaleRecipe() was added. Aloows user to scale recipe to their choice using a switch case.
+
+scale() was edited. edited info cant be changed in thi smethod.
+
