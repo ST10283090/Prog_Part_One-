@@ -19,3 +19,5 @@ returnScale() was added i fthe user wnats to return to the original recipe. Allo
 
 clearRecipe() was added.
 clearRecipe was editied. Now allows user to reset array to no values entered. User wil then be allwed to enter another recipe.
+
+exit prgram() was added to exit program if need be.
