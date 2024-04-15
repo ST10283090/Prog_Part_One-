@@ -40,14 +40,14 @@ namespace Prog_Part_One_
 
         //Method for Main menu
         public void mainMenu()
-        {
+        {//show user their options
             Console.WriteLine("1. Add a new recipe \n"
                             + "2. Display the recipe \n"
                             + "3. Scale the recipe \n"
                             + "4. Return to original scale of the recipe \n"
                             + "5. Clear all the data \n"
                             + "6. Exit the Program!");
-
+            //record option chosen
             string kb = Console.ReadLine();
 
             switch (kb)
@@ -90,7 +90,7 @@ namespace Prog_Part_One_
         {
 
             Console.Clear();
-
+            //meeting criteria
             Console.WriteLine("How many ingredients does the recipe call for?");
             bool temp = false;
             while (temp == false)
@@ -131,7 +131,7 @@ namespace Prog_Part_One_
                         Console.WriteLine("Are we cooking for John Cena?");
                     }
                 }//while
-
+                //generic measurements
                 Console.WriteLine("Choose the unit of measurement for the ingredient:\n" +
                   "1. kg\n" +
                   "2. cups\n" +
@@ -144,7 +144,7 @@ namespace Prog_Part_One_
                 string unit = "";
                 string input = Console.ReadLine();
                 bool temp2 = false; 
-
+                //temp is giving an error???
                 while (temp2==false)
                 {
                     switch (input)
@@ -220,7 +220,7 @@ namespace Prog_Part_One_
             }
 
             for (int i = 0; i < stepsNum; i++)
-            {
+            {//loop to add descriptions in to the array
                 Console.WriteLine("Enter description for step {0}:", i+1);
                 string stepDescription = Console.ReadLine();
                 recipeSteps.Add(new Ingredient { IngredSteps = stepDescription });
@@ -232,7 +232,7 @@ namespace Prog_Part_One_
         public void displayRecipe()
         {
             if (recipeSteps.Count == 0)
-            {
+            {//formatting
                 Console.Clear();
                 Console.WriteLine("==================================================");
                 Console.WriteLine("Let's add a recipe before we try to display it!");
@@ -263,7 +263,7 @@ namespace Prog_Part_One_
         }//displayRecipe
 
         public void deleteRecipe()
-        {
+        {//criteria/ask user if they r sure, safety net for error
             Console.WriteLine("Do you want to delete your saved recipe? Enter 1 or 2.\n" +
                               "1. Yes\n" +
                               "2. No");
@@ -281,7 +281,7 @@ namespace Prog_Part_One_
                         scaledQuantity.Clear();
                         ingredientNum = 0;
                         stepsNum = 0;
-                        scale = true;
+                        scale = true;//confirm action.
                         Console.WriteLine("+++++++++++++++++++++++++++++++++++++++");
                         Console.WriteLine("Recipe has been cleared. You can now add a new recipe!");
                         Console.WriteLine("+++++++++++++++++++++++++++++++++++++++");
@@ -356,7 +356,7 @@ namespace Prog_Part_One_
                 ingredient.ScaledName = ingredient.IngredName;
                 ingredient.ScaledUnit = ingredient.IngredUnit;
             }
-
+            //display changed recipe
             Console.Clear();
             Console.WriteLine("SCALED recipe for " + scaledName);
             Console.WriteLine("\nIngredients:");

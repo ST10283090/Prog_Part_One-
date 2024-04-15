@@ -22,4 +22,5 @@ namespace Prog_Part_One_
 
         public string ScaledUnit { get; set; }
     }
-}
+}//all variables to be used 
+//neat, simple
