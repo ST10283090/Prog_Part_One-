@@ -17,6 +17,8 @@ scale() was edited. edited info cant be changed in thi smethod.
 
 returnScale() was added i fthe user wnats to return to the original recipe. Allows user to do so. 
 
+error handling was added to ingredients so that value <= 0 couldbnt be entered.
+
 clearRecipe() was added.
 clearRecipe was editied. Now allows user to reset array to no values entered. User wil then be allwed to enter another recipe.
 
