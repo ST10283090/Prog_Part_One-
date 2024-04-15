@@ -16,3 +16,5 @@ ScaleRecipe() was added. Aloows user to scale recipe to their choice using a swi
 scale() was edited. edited info cant be changed in thi smethod.
 
 returnScale() was added i fthe user wnats to return to the original recipe. Allows user to do so. 
+
+clearRecipe() was added.
